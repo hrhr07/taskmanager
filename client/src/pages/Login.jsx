@@ -3,9 +3,10 @@ import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import Textbox from "../components/Textbox";
 import Button from "../components/Button";
+import { useSelector } from "react-redux";
 
 export default function Login() {
-  const { user } = "";
+  const { user } = useSelector((state) => state.auth);
   const {
     register,
     handleSubmit,
@@ -17,7 +18,7 @@ export default function Login() {
   const submitHandler = async (data) => {
     console.log("submit");
   };
-
+  console.log(user);
   useEffect(() => {
     user && navigate("/dashboard");
   }, [user]);
@@ -51,7 +52,7 @@ export default function Login() {
             className="form-container w-full md:w-[400px] flex flex-col gap-y-8 bg-white px-10 pt-14 pb-14"
           >
             <div className="">
-              <p className="text-slate-500 text-3xl font-bold text-center">
+              <p className="text-blue-500 text-3xl font-bold text-center">
                 ¡Bienvenido de nuevo!
               </p>
               <p className="text-center text-base text-gray-700 ">
