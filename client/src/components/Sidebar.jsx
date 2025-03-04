@@ -71,7 +71,7 @@ const Sidebar = () => {
         to={el.link}
         onClick={closeSidebar}
         className={clsx(
-          "w-full lg:w-3/4 flex gap-2 px-3 py-2 rounded-full items-center text-gray-800 text-base hover:bg-[#2564ed2d]",
+          "w-full lg:w-3/4 flex gap-2 px-3 py-2 rounded-full items-center text-gray-800 text-base hover:bg-[#2564ed2d] cursor-pointer",
           path === el.link.split("/")[0]
             ? "bg-blue-500 text-neutral-50 hover:text-gray-800"
             : ""
@@ -100,7 +100,7 @@ const Sidebar = () => {
       </div>
 
       <div className="">
-        <button className="w-full flex gap-2 p-2 items-center text-lg text-gray-800">
+        <button className="w-full flex gap-2 p-2 items-center text-lg text-gray-800 cursor-pointer">
           <MdSettings />
           <span>Ajustes</span>
         </button>
