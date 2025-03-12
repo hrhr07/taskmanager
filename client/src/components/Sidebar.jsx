@@ -15,7 +15,7 @@ import clsx from "clsx";
 
 const linkData = [
   {
-    label: "Dashboard",
+    label: "Panel",
     link: "dashboard",
     icon: <MdDashboard />,
   },
