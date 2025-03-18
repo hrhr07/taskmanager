@@ -26,17 +26,17 @@ const linkData = [
   },
   {
     label: "Completadas",
-    link: "completed/completed",
+    link: "completed/completadas",
     icon: <MdTaskAlt />,
   },
   {
     label: "En curso",
-    link: "in-progress/in progress",
+    link: "in-progress/en progreso",
     icon: <MdOutlineSchedule />,
   },
   {
     label: "Por hacer",
-    link: "todo/todo",
+    link: "todo/ por hacer",
     icon: <MdOutlinePendingActions />,
   },
   {

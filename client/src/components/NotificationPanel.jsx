@@ -21,7 +21,7 @@ const data = [
     ],
     text: "Se le ha asignado una nueva tarea a usted y a otras dos personas. La prioridad de la tarea es normal, así que verifique y actúe en consecuencia. La fecha de la tarea es el jueves 6 de febrero de 2025. ¡¡¡Gracias!!!",
     task: null,
-    notiType: "alert",
+    notiType: "alerta",
     isRead: [],
     createdAt: "2025-02-02T05:45:23.353Z",
     updatedAt: "2025-02-02T05:45:23.353Z",
@@ -39,7 +39,7 @@ const data = [
       _id: "65c5f12ab5204a81bde866a9",
       title: "Test task",
     },
-    notiType: "alert",
+    notiType: "alerta",
     isRead: [],
     createdAt: "2025-02-09T09:32:26.810Z",
     updatedAt: "2025-02-09T09:32:26.810Z",
@@ -48,7 +48,7 @@ const data = [
 ];
 
 const ICONS = {
-  alert: (
+  alerta: (
     <HiBellAlert className="h-5 w-5 text-gray-600 group-hover:text-indigo-600" />
   ),
   message: (
