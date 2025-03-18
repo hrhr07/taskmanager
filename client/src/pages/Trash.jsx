@@ -15,9 +15,9 @@ import AddUser from "../components/AddUser";
 import ConfirmatioDialog from "../components/Dialogs";
 
 const ICONS = {
-  high: <MdKeyboardDoubleArrowUp />,
-  medium: <MdKeyboardArrowUp />,
-  low: <MdKeyboardArrowDown />,
+  alta: <MdKeyboardDoubleArrowUp />,
+  media: <MdKeyboardArrowUp />,
+  baja: <MdKeyboardArrowDown />,
 };
 
 const Trash = () => {

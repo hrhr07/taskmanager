@@ -28,15 +28,15 @@ const assets = [
 ];
 
 const ICONS = {
-  high: <MdKeyboardDoubleArrowUp />,
-  medium: <MdKeyboardArrowUp />,
-  low: <MdKeyboardArrowDown />,
+  alta: <MdKeyboardDoubleArrowUp />,
+  media: <MdKeyboardArrowUp />,
+  baja: <MdKeyboardArrowDown />,
 };
 
 const bgColor = {
-  high: "bg-red-200",
-  medium: "bg-yellow-200",
-  low: "bg-blue-200",
+  alta: "bg-red-200",
+  media: "bg-yellow-200",
+  baja: "bg-blue-200",
 };
 
 const TABS = [
@@ -45,17 +45,17 @@ const TABS = [
 ];
 
 const TASKTYPEICON = {
-  commented: (
+  comentada: (
     <div className="w-10 h-10 rounded-full bg-gray-500 flex items-center justify-center text-white">
       <MdOutlineMessage />,
     </div>
   ),
-  started: (
+  iniciada: (
     <div className="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white">
       <FaThumbsUp size={20} />
     </div>
   ),
-  assigned: (
+  asignada: (
     <div className="w-6 h-6 flex items-center justify-center rounded-full bg-gray-500 text-white">
       <FaUser size={14} />
     </div>
@@ -65,12 +65,12 @@ const TASKTYPEICON = {
       <FaBug size={24} />
     </div>
   ),
-  completed: (
+  completada: (
     <div className="w-10 h-10 rounded-full bg-green-600 flex items-center justify-center text-white">
       <MdOutlineDoneAll size={24} />
     </div>
   ),
-  "in progress": (
+  "en progreso": (
     <div className="w-8 h-8 flex items-center justify-center rounded-full bg-violet-600 text-white">
       <GrInProgress size={16} />
     </div>

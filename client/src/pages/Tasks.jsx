@@ -19,9 +19,9 @@ const TABS = [
 ];
 
 const TASK_TYPE = {
-  todo: "bg-blue-600",
+  porhacer: "bg-blue-600",
   "en progreso": "bg-yellow-600",
-  completed: "bg-green-600",
+  completada: "bg-green-600",
 };
 
 const Tasks = () => {
@@ -75,12 +75,12 @@ const Tasks = () => {
       <Tabs tabs={TABS} setSelected={setSelected}>
         {!status && (
           <div className="w-full flex justify-between gap-4 md:gap-x-12 py-4">
-            <TaskTitle label="Por Hacer" className={TASK_TYPE.todo} />
+            <TaskTitle label="Por Hacer" className={TASK_TYPE.porhacer} />
             <TaskTitle
               label="En progreso"
               className={TASK_TYPE["en progreso"]}
             />
-            <TaskTitle label="Completado" className={TASK_TYPE.completed} />
+            <TaskTitle label="Completada" className={TASK_TYPE.completada} />
           </div>
         )}
 

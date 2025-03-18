@@ -35,15 +35,15 @@ export function getInitials(fullName) {
 }
 
 export const PRIOTITYSTYELS = {
-  high: "text-red-600",
-  medium: "text-yellow-600",
-  low: "text-blue-600",
+  alta: "text-red-600",
+  media: "text-yellow-600",
+  baja: "text-blue-600",
 };
 
 export const TASK_TYPE = {
-  todo: "bg-blue-600",
-  "in progress": "bg-yellow-600",
-  completed: "bg-green-600",
+  porhacer: "bg-blue-600",
+  "en progreso": "bg-yellow-600",
+  completada: "bg-green-600",
 };
 
 export const BGS = [
