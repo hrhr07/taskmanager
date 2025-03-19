@@ -51,13 +51,17 @@ export const loginUser = async (req, res) => {
     if (!user) {
       return res
         .status(401)
-        .json({ status: false, message: "Correo electrónico o contraseña no válidos." });
+        .json({
+          status: false,
+          message: "Correo electrónico o contraseña no válidos.",
+        });
     }
 
     if (!user?.isActive) {
       return res.status(401).json({
         status: false,
-        message: "La cuenta de usuario ha sido desactivada, contacta al administrador.",
+        message:
+          "La cuenta de usuario ha sido desactivada, contacta al administrador.",
       });
     }
 
@@ -72,7 +76,10 @@ export const loginUser = async (req, res) => {
     } else {
       return res
         .status(401)
-        .json({ status: false, message: "Correo electrónico o contraseña inválidos." });
+        .json({
+          status: false,
+          message: "Correo electrónico o contraseña inválidos.",
+        });
     }
   } catch (error) {
     console.log(error);
@@ -150,7 +157,9 @@ export const updateUserProfile = async (req, res) => {
         user: updatedUser,
       });
     } else {
-      res.status(404).json({ status: false, message: "Usuario no encontrado." });
+      res
+        .status(404)
+        .json({ status: false, message: "Usuario no encontrado." });
     }
   } catch (error) {
     console.log(error);
@@ -224,8 +233,8 @@ export const activateUserProfile = async (req, res) => {
 
       res.status(201).json({
         status: true,
-        message: `User account has been ${
-          user?.isActive ? "activated" : "disabled"
+        message: `La cuenta de usuario ha sido ${
+          user?.isActive ? "activada" : "deshabilitada"
         }`,
       });
     } else {
